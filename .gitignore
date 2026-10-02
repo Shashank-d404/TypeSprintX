@@ -1,5 +1,5 @@
 # Logs
-logs
+/logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -141,3 +141,31 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ---- TypeSprintX additions ----
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs (only explicitly shared VS Code files are tracked)
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Electron installer / package output (electron-vite build output is covered by "out" and "dist")
+/apps/desktop/release/
+*.exe
+*.msi
+*.AppImage
+*.deb
+*.rpm
+*.blockmap
+
+# Local database dumps (migrations and seeds under database/ stay tracked)
+/database/dumps/
+*.dump
+*.sql.gz
